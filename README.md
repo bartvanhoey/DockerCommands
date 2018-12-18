@@ -17,3 +17,7 @@ If you get error message `image operating system "windows" cannot be used on thi
 |`docker images`                                              | shows the list of container images on a machine               |
 |`docker network`                                             | manage networking with Docker                                 |
 |`docker pull microsoft/windowsservercore`                    | pull latest windowsservercore image from Docker Hub           |
+|`docker system prune`                                        | clean up any resources — images, containers, volumes and      |
+|                                                             | network sthat are dangling (not associated with a container)  |
+|`docker system prune -a`                                     | to additionally remove any stopped containers and all unused  |
+|                                                             | images (not just dangling images)  |

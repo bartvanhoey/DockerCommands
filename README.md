@@ -8,7 +8,8 @@
 |`docker ps -a`                                               | docker exited containers                                      |
 |`docker run -it microsoft/windowsservercore cmd.exe          | run windowsservercore image, run command inside container     |
 
-If you get error message `image operating system "windows" cannot be used on this platform` you need to switch to Windows Containers on Docker -> Right Click on Docker Icon in Notification Area and choose `Switch to Windows Containers...`
+If you get error message `image operating system "windows" cannot be used on this platform` you need to switch to
+Windows Containers on Docker -> Right Click on Docker Icon in Notification Area and choose `Switch to Windows Containers...`
 
 | Command                                                     |               Action                                          |
 |-------------------------------------------------------------|---------------------------------------------------------------|
@@ -26,7 +27,7 @@ If you get error message `image operating system "windows" cannot be used on thi
 |`docker rmi <IMAGE ID>`                                      | remove image                                                  |
 
  ATTENTION: You may get error like: Error response from daemon: conflict: unable to remove repository reference IMAGE NAME
- (must force) - container 302e8bd is using its referenced image 3334b287844 -> a stopped containder isn't actually removed.
+ (must force) - container 302e8bd is using its referenced image 3334b287844 -> a stopped container isn't actually removed.
 
 ## Docker Parameters
 

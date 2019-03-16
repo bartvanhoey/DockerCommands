@@ -15,13 +15,12 @@
 
 | Command                                                          |               Action                                          |
 |-------------------------------------------------------------     |---------------------------------------------------------------|
-|`docker run <ImageName>:<Tag>` -p [external port]:[internal port] | create and start docker container from image                  |
-|`docker run <Image Id>` -p [external port]:[internal port]        | create and start docker container from image (first 3 chars)  |
-|`docker start <Docker Id>`                                        | start docker container                                        |
+|`docker run <image name>:<tag>` -p [external port]:[internal port] | create and start docker container from image                  |
+|`docker run <image id>` -p [external port]:[internal port]        | create and start docker container from image (first 3 chars)  |
+|`docker start <docker id>`                                        | start docker container                                        |
 |`docker ps`                                                       | docker running containers                                     |
 |`docker ps -a`                                                    | docker exited containers                                      |
-|`docker build -t bartvanhoey/node:v1 .`                           | build docker container from Dockerfile                        |
-|`docker build -t bartvanhoey/node:v1 .`                           | build docker container from Dockerfile                        |
+|`docker build -t <image name>:<tag> .`                           | build docker container from Dockerfile                        |
 
 If you get error message `image operating system "windows" cannot be used on this platform` you need to switch to
 Windows Containers on Docker -> Right Click on Docker Icon in Notification Area and choose `Switch to Windows Containers...`
@@ -32,8 +31,8 @@ Windows Containers on Docker -> Right Click on Docker Icon in Notification Area 
 |`docker ps -a`                                                    | list of running containers (-a slso show exited containers)   |
 |`docker network`                                                  | manage networking with Docker                                 |
 |`docker pull microsoft/windowsservercore`                         | pull latest windowsservercore image from Docker Hub           |
-|`docker rm <CONTAINER ID>`                                        | remove a specific container                                   |
-|`docker rm -f <CONTAINER ID>`                                     | remove a specific running container                           |
+|`docker rm <container id>`                                        | remove a specific container                                   |
+|`docker rm -f <container id>`                                     | remove a specific running container                           |
 |`docker system prune`                                             | clean up any resources — images, containers, volumes and      |
 |                                                                  | network sthat are dangling (not associated with a container)  |
 |`docker system prune -a`                                          | to additionally remove any stopped containers and all unused  |
@@ -49,3 +48,4 @@ git
 |`-d`                                                         | detached, when you need to run a background service.          |
 |`-p` 8080:80                                                 | expose inside container port 80 to port 8080 on your machine  |
 |`--rm`                                                       | removes the container from list after container has stopped   |
+|`-t`                                                         | tag   |

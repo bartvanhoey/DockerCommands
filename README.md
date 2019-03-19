@@ -32,6 +32,7 @@ Windows Containers on Docker -> Right Click on Docker Icon in Notification Area 
 | Command                                                                                        |               Action                                          |
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
 |`docker exec <container name> ipconfig`                                                         | get the IP address of a running container                     |
+|`docker exec -it <container id> bash`                                                           | interactive way to use terminal inside a container            |
 |`docker ps -a`                                                                                  | list of running containers (-a slso show exited containers)   |
 |`docker network`                                                                                | manage networking with Docker                                 |
 |`docker pull microsoft/windowsservercore`                                                       | pull latest windowsservercore image from Docker Hub           |
@@ -42,6 +43,15 @@ Windows Containers on Docker -> Right Click on Docker Icon in Notification Area 
 |                                                                                                | network sthat are dangling (not associated with a container)  |
 |`docker system prune -a`                                                                        | to additionally remove any stopped containers and all unused  |
 |                                                                                                | images (not just dangling images)                             |
+
+### DockerCompose
+
+| Command                                                                                        |               Action                                          |
+|------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
+|`docker-compose build`                                                                          | build containers, volumes,.. specified in docker-compose.yaml |            |`docker-compose up -d`                                                                          | spin up containers, volumes specified in docker-compos.yaml   |
+|`docker-compose down`                                                                           | tear down docker-compose session                              |
+|`docker-compose ps`                                                                             | overview of containers docker-compose session                 |
+|`docker exec <container name>_1 env`                                                            | show environment variables from inside a container            |
 
 ATTENTION: You may get error like: Error response from daemon: conflict: unable to remove repository reference IMAGE NAME  (must force) - container 302e8bd is using its referenced image 3334b287844 -> a stopped container isn't actually removed.
 

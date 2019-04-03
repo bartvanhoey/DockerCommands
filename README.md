@@ -43,7 +43,7 @@ Windows Containers on Docker -> Right Click on Docker Icon in Notification Area 
 |                                                                                                | network sthat are dangling (not associated with a container)  |
 |`docker system prune -a`                                                                        | to additionally remove any stopped containers and all unused  |
 |                                                                                                | images (not just dangling images)                             |
-|`docker stop $(docker ps -q)`                                                                   | stop all running containers  (in git bash command window)     |
+|`docker stop $(docker ps -q)`                                                                   | stop all running containers  (in Git Bash command window)     |
 
 ### DockerCompose
 

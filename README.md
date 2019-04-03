@@ -43,12 +43,14 @@ Windows Containers on Docker -> Right Click on Docker Icon in Notification Area 
 |                                                                                                | network sthat are dangling (not associated with a container)  |
 |`docker system prune -a`                                                                        | to additionally remove any stopped containers and all unused  |
 |                                                                                                | images (not just dangling images)                             |
+|`docker stop $(docker ps -q)`                                                                   | stop all running containers  (in git bash command window)     |
 
 ### DockerCompose
 
 | Command                                                                                        |               Action                                          |
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-|`docker-compose build`                                                                          | build containers, volumes,.. specified in docker-compose.yaml |            |`docker-compose up -d`                                                                          | spin up containers, volumes specified in docker-compos.yaml   |
+|`docker-compose build`                                                                          | build containers, volumes,.. specified in docker-compose.yaml |
+|`docker-compose up -d`                                                                          | spin up containers, volumes specified in docker-compos.yaml   |
 |`docker-compose down`                                                                           | tear down docker-compose session                              |
 |`docker-compose ps`                                                                             | overview of containers docker-compose session                 |
 |`docker exec <container name>_1 env`                                                            | show environment variables from inside a container            |

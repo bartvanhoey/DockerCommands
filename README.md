@@ -17,7 +17,7 @@
 | Command                                                                                        |               Action                                          |
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
 |`docker run <image name>:<tag>` -p [external port]:[internal port]                              | create and start docker container from image                  |
-|`docker run -p [external port]:[internal port] --name my-cotainer <image name>:<tag>`           | create and start docker container from image                  |
+|`docker run -p [external port]:[internal port] --name my-container <image name>:<tag>`         | create and start docker container from image                  |
 |`docker run <image id>` -p [external port]:[internal port]                                      | create and start docker container from image (first 3 chars)  |
 |`docker start <docker id>`                                                                      | start docker container                                        |
 |`docker ps`                                                                                     | docker running containers                                     |
@@ -51,6 +51,7 @@ Windows Containers on Docker -> Right Click on Docker Icon in Notification Area 
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
 |`docker-compose build`                                                                          | build containers, volumes,.. specified in docker-compose.yaml |
 |`docker-compose up -d`                                                                          | spin up containers, volumes specified in docker-compos.yaml   |
+|`docker-compose up --build -d`                                                                  | build + spin up containers,... specified in docker-compos.yaml|
 |`docker-compose down`                                                                           | tear down docker-compose session                              |
 |`docker-compose ps`                                                                             | overview of containers docker-compose session                 |
 |`docker exec <container name>_1 env`                                                            | show environment variables from inside a container            |

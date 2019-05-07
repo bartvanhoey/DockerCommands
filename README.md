@@ -16,8 +16,9 @@
 
 | Command                                                                                        |               Action                                          |
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
+|`docker create <image name>:<tag>`                                                              | create docker container without starting it                   |
 |`docker run <image name>:<tag>` -p [external port]:[internal port]                              | create and start docker container from image                  |
-|`docker run -p [external port]:[internal port] --name my-container <image name>:<tag>`         | create and start docker container from image                  |
+|`docker run -p [external port]:[internal port] --name my-container <image name>:<tag>`          | create and start docker container from image                  |
 |`docker run <image id>` -p [external port]:[internal port]                                      | create and start docker container from image (first 3 chars)  |
 |`docker start <docker id>`                                                                      | start docker container                                        |
 |`docker ps`                                                                                     | docker running containers                                     |
@@ -33,6 +34,8 @@ Windows Containers on Docker -> Right Click on Docker Icon in Notification Area 
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
 |`docker exec <container name> ipconfig`                                                         | get the IP address of a running container                     |
 |`docker exec -it <container id> bash`                                                           | interactive way to use terminal inside a container            |
+|`docker attach --sig-proxy=false <container id>`                                                | peek at container output stream --sig-proxy=false parameter   |
+|                                                                                                | ensures CTRL+C will not stop process in container             |
 |`docker ps -a`                                                                                  | list of running containers (-a slso show exited containers)   |
 |`docker network`                                                                                | manage networking with Docker                                 |
 |`docker pull microsoft/windowsservercore`                                                       | pull latest windowsservercore image from Docker Hub           |

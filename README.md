@@ -19,6 +19,7 @@
 |`docker create <image name>:<tag>`                                                              | create docker container without starting it                   |
 |`docker run <image name>:<tag>` -p [external port]:[internal port]                              | create and start docker container from image                  |
 |`docker run -p [external port]:[internal port] --name my-container <image name>:<tag>`          | create and start docker container from image                  |
+|`docker run -it --rm <image name>:<tag>`                                                        | create/start container, remove after stop (CTRL+C)            |
 |`docker run <image id>` -p [external port]:[internal port]                                      | create and start docker container from image (first 3 chars)  |
 |`docker start <docker id>`                                                                      | start docker container                                        |
 |`docker ps`                                                                                     | docker running containers                                     |

@@ -11,6 +11,8 @@
 |`docker rmi <image id>`                                                                         | remove image                                                  |
 |`docker image prune`                                                                            | remove images                                                 |
 |`docker rmi $(docker images -q)`                                                                | delete all images                                             |
+|`docker tag <source image name>:<tag> <target image name>:<tag>`                                | push docker image to Docker Hub                               |
+|`docker push <image name>:<tag>`                                                                | push docker image to Docker Hub                               |
 
 ### Containers
 

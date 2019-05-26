@@ -16,7 +16,7 @@
 
 | Command                                                                                        |               Action                                          |
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-|`docker run <image name>:<tag>` -p [external port]:[internal port]                              | create and start docker container from image                  |
+|`docker run -p [external port]:[internal port] <image name>:<tag>`                              | create and start docker container from image                  |
 |`docker run -p [external port]:[internal port] --name my-cotainer <image name>:<tag>`           | create and start docker container from image                  |
 |`docker run <image id>` -p [external port]:[internal port]                                      | create and start docker container from image (first 3 chars)  |
 |`docker start <docker id>`                                                                      | start docker container                                        |

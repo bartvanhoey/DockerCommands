@@ -63,7 +63,8 @@ Windows Containers on Docker -> Right Click on Docker Icon in Notification Area 
 |`docker-compose ps`                                                                             | overview of containers docker-compose session                 |
 |`docker exec <container name>_1 env`                                                            | show environment variables from inside a container            |
 
-ATTENTION: You may get error like: Error response from daemon: conflict: unable to remove repository reference IMAGE NAME  (must force) - container 302e8bd is using its referenced image 3334b287844 -> a stopped container isn't actually removed.
+ATTENTION: You may get error like: Error response from daemon: conflict: unable to remove repository reference IMAGE NAME  (must force) -
+container 302e8bd is using its referenced image 3334b287844 -> a stopped container isn't actually removed.
 
 ### Docker Parameters
 

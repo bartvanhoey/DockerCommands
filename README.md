@@ -85,3 +85,10 @@ ATTENTION: You may get error like: Error response from daemon: conflict: unable 
 |`docker volume rm <volume name>`                                                                | delete a volume by name                                       |
 |`docker inspect <volume name>`                                                                  | inspect a volume                                              |
 |`docker run -d -p 8083:3000 --name <container name> -v /d:/app:/<volume name> <image name>`     | Create and run container with volume path d:/app              |
+
+### Howto resize Docker Virtual Hard disk
+
+| Command                                                                                                   |               Action                               |
+|-----------------------------------------------------------------------------------------------------------|----------------------------------------------------|
+|`docker image prune`                                                                                       | remove all dangling images                         |
+| [powershell] `Optimize-VHD -Path "C:\ProgramData\DockerDesktop\vm-data\DockerDesktop.vhdx" -Mode Quick`   | optimize hard disk                                 |
